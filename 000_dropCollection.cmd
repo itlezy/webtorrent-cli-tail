@@ -1,0 +1,6 @@
+CD /D %~dp0
+
+ECHO DROP COLLECTION? PRESS CTRL-C TO CANCEL
+PAUSE
+
+node dropCollectionAsync.js

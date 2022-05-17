@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "fs": "^0.0.1-security",
+    "fs-chunk-store": "^3.0.0",
+    "mongodb": "^4.5.0",
+    "nat-upnp": "^1.1.1",
+    "sqlite3": "^5.0.8",
+    "tail": "^2.2.4",
+    "webtorrent": "^1.8.16"
+  },
+  "name": "webtorrent-cli-tail",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
