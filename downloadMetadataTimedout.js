@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import fs, { stat } from "fs";
+import fs from "fs";
 import WebTorrent from "webtorrent";
 import mongodb from "mongodb";
 import natUpnp from "nat-upnp";

@@ -1,4 +1,6 @@
-const MongoClient = require("mongodb").MongoClient;
+import mongodb from "mongodb";
+
+const MongoClient = mongodb.MongoClient;
 
 // -----------------
 

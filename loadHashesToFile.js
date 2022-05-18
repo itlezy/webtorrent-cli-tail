@@ -16,11 +16,14 @@ const dbClient = new MongoClient(dbUri);
 
 let jsHashes = []
 
+var i = 0
+
 logLines.split(/\r?\n/).forEach(line => {
+  if (i++ > 10000) { return }
   if (line.indexOf(" handleDHT") > 0) {
     let sha1 = line.substring(50, line.length - 1)
-    //console.log("Sha1", sha1)
-    jsHashes.push({ _id: sha1, processed: false })
+    fs.appendFileSync("/tmp/hashes.txt", sha1 + "\n")
+    //jsHashes.push({ _id: sha1, processed: false })
   }
 });
 
